@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] PlayerMovement playerMovement;
 
-    //eventi ve içindeki parametreyi stringle belirtmem lazým ki, remaining jumpla pitchi birleþtirip her zýplamada sesini kalýnlaþtýrayým.
+    
 
     private FMOD.Studio.EventInstance TripleJumpInstance; //burda instanceledik
     [SerializeField] FMODUnity.EventReference tripleJumpEvent;
