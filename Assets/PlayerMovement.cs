@@ -22,9 +22,9 @@ public class PlayerMovement : MonoBehaviour
 
 
     //triple jump
-    private bool isJumping;
+    public bool isJumping;
     private int maxJumps = 3;
-    private int remainingJumps;
+    public int remainingJumps;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;

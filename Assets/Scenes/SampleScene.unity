@@ -314,6 +314,8 @@ MonoBehaviour:
   speed: 8
   jumpingPower: 15
   wallJumpingPower: {x: 8, y: 16}
+  isJumping: 0
+  remainingJumps: 0
   rb: {fileID: 141088183}
   groundCheck: {fileID: 265688356}
   groundLayer:
@@ -322,7 +324,7 @@ MonoBehaviour:
   wallCheck: {fileID: 2081905937}
   wallLayer:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 128
 --- !u!1 &261899104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,6 +1113,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a05cbce4ebae17f40a1ace873adb76fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rate: 0.75
+  player: {fileID: 141088179}
+  playerMovement: {fileID: 141088186}
+  tripleJumpEvent:
+    Guid:
+      Data1: 1388864096
+      Data2: 1189726902
+      Data3: -1658555467
+      Data4: 1252333161
+    Path: event:/Triple_Jump
+  pitch: 0
 --- !u!4 &1395273947
 Transform:
   m_ObjectHideFlags: 0
