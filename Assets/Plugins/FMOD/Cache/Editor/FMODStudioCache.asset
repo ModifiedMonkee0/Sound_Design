@@ -211,10 +211,10 @@ MonoBehaviour:
   Path: "../../../Desktop/\xF6dev/Year lll- G\xFCz/Bayakar- Sound/Baykar_sound_design_deneme/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638513433616791720
+  lastModified: 638513668421335422
   FileSizes:
   - Name: Desktop
-    Value: 24032
+    Value: 35296
   Exists: 1
 --- !u!114 &-7542855942817320493
 MonoBehaviour:
@@ -592,10 +592,10 @@ MonoBehaviour:
   Path: "../../../Desktop/\xF6dev/Year lll- G\xFCz/Bayakar- Sound/Baykar_sound_design_deneme/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638513433616821772
+  lastModified: 638513668421355461
   FileSizes:
   - Name: Desktop
-    Value: 4140
+    Value: 4178
   Exists: 1
 --- !u!114 &-3232653914606380679
 MonoBehaviour:
@@ -876,12 +876,13 @@ MonoBehaviour:
   - {fileID: 4657041506264319538}
   - {fileID: -3205738639921494125}
   - {fileID: -3687899455607109458}
+  - {fileID: 7644728247923780706}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7595559807807062399}
   StringsBanks:
   - {fileID: -3400270536218852652}
-  cacheTime: 638513433616821772
+  cacheTime: 638513668421355461
   cacheVersion: 131617
 --- !u!114 &287874821484499758
 MonoBehaviour:
@@ -1552,6 +1553,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &7644728247923780706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Power_Up
+  m_EditorClassIdentifier: 
+  Path: event:/Power_Up
+  Guid:
+    Data1: 928993219
+    Data2: 1284240990
+    Data3: 971391638
+    Data4: 1113388669
+  Banks:
+  - {fileID: -7595559807807062399}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1002
 --- !u!114 &8286007710737919431
 MonoBehaviour:
   m_ObjectHideFlags: 0

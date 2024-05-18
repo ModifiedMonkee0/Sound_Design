@@ -23,8 +23,11 @@ public class PlayerMovement : MonoBehaviour
 
     //triple jump
     public bool isJumping;
-    private int maxJumps = 3;
+    public int maxJumps = 3;
     public int remainingJumps;
+
+    //check if perk is active
+    [SerializeField] public bool tripleJumpActive = false;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -32,8 +35,25 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
 
+
+    private void Start()
+    {
+        tripleJumpActive = false;
+    }
     private void Update()
     {
+        
+        if (!tripleJumpActive)
+        {
+            maxJumps = 1;
+        }
+        else
+        {
+            maxJumps = 3;
+        }
+
+        Debug.Log("Triple Jump Active: " + tripleJumpActive);
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if(IsGrounded() && !Input.GetButton("Jump"))
