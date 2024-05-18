@@ -21,7 +21,7 @@ public class BasicMechanics : MonoBehaviour
         {
             InstantiateAtPlayerPosition();
             SpawnPlayer();
-            DestoyPlayer();
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1)) // S tuþuna basýldýðýnda scale deðiþecek
@@ -45,12 +45,8 @@ public class BasicMechanics : MonoBehaviour
 
     void SpawnPlayer()
     {
-        // Oyuncuyu respawn noktasýnda instantiate et
-        playerPrefab = Instantiate(playerPrefab, respawnPoint.position, respawnPoint.rotation);
+        playerPrefab.transform.position = respawnPoint.position;
     }
 
-    void DestoyPlayer()
-    {
-        Destroy(playerPrefab);
-    }
+   
 }
