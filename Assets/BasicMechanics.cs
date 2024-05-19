@@ -9,7 +9,9 @@ public class BasicMechanics : MonoBehaviour
 
     public Transform respawnPoint;
     public GameObject playerPrefab;
-    
+    public Animator bodyAnimator;
+
+    public Rigidbody2D rb2d;
 
 
     public Vector3 newScale = new Vector3(2f, 2f, 2f); // Yeni scale deðeri
@@ -19,9 +21,13 @@ public class BasicMechanics : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0)) // Space tuþuna basýldýðýnda instantiate iþlemi yapýlacak
         {
-            InstantiateAtPlayerPosition();
-            SpawnPlayer();
+            bodyAnimator.SetBool("Dead", true);
+            StopPlayerMovement();
             
+            WaitBeforeDead();
+            StartCoroutine(WaitBeforeDead());
+
+
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1)) // S tuþuna basýldýðýnda scale deðiþecek
@@ -30,6 +36,14 @@ public class BasicMechanics : MonoBehaviour
         }
     }
 
+    IEnumerator WaitBeforeDead()
+    {
+        yield return new WaitForSeconds(2);
+        InstantiateAtPlayerPosition();
+        SpawnPlayer();
+        bodyAnimator.SetBool("Dead", false);
+        StartPlayerMovement();
+    }
     void InstantiateAtPlayerPosition()
     {
         
@@ -48,5 +62,14 @@ public class BasicMechanics : MonoBehaviour
         playerPrefab.transform.position = respawnPoint.position;
     }
 
-   
+   void StopPlayerMovement()
+    {
+        rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
+    void StartPlayerMovement()
+    {
+        rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+    }
+
 }
