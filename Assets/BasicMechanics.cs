@@ -14,6 +14,8 @@ public class BasicMechanics : MonoBehaviour
     public Rigidbody2D rb2d;
 
     public Vector3 newScale = new Vector3(2f, 2f, 2f); // Yeni scale deðeri
+    public Vector3 normalScale = new Vector3(1f, 1f, 1f); // Yeni scale deðeri
+
     public float scaleDuration = 3f; // Scale deðiþim süresi
     public GameObject body;
 
@@ -66,6 +68,10 @@ public class BasicMechanics : MonoBehaviour
     void SpawnPlayer()
     {
         playerPrefab.transform.position = respawnPoint.position;
+
+        objectToInstantiate.transform.localScale = normalScale;
+        body.transform.localScale = normalScale;
+
     }
 
     void StopPlayerMovement()

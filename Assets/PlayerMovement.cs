@@ -18,8 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
-    [SerializeField] private Vector2 wallJumpingPower = new Vector2 (8f, 16f);
-
+    [SerializeField] private Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
     //triple jump
     public bool isJumping;
@@ -35,14 +34,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer;
 
+    // Animator reference
+   public Animator animator;
 
     private void Start()
     {
         tripleJumpActive = false;
+        // Initialize animator
+       
     }
+
     private void Update()
     {
-        
         if (!tripleJumpActive)
         {
             maxJumps = 1;
@@ -56,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if(IsGrounded() && !Input.GetButton("Jump"))
+        if (IsGrounded() && !Input.GetButton("Jump"))
         {
             isJumping = false;
             remainingJumps = maxJumps;
@@ -64,14 +67,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            if ( IsGrounded()  || (isJumping && remainingJumps > 0))
+            if (IsGrounded() || (isJumping && remainingJumps > 0))
             {
                 isJumping = true;
                 rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 remainingJumps--;
-                PlaySFXtripleJump();
+                
             }
-           
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -86,6 +88,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+
+        // Update animator parameters
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+        animator.SetBool("IsJumping", isJumping);
     }
 
     private void FixedUpdate()
@@ -123,7 +129,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isWallSliding)
         {
-            
             isWallJumping = false;
             wallJumpingDirection = -transform.localScale.x;
             wallJumpingCounter = wallJumpingTime;
@@ -140,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
             isWallJumping = true;
             rb.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
             wallJumpingCounter = 0f;
-            PlaySFXwallJump();
+            
 
             if (transform.localScale.x != wallJumpingDirection)
             {
@@ -170,14 +175,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void PlaySFXwallJump()
-    {
-        
-        Debug.Log("Müzik oynuyor");
-    }
+    
 
-    private void PlaySFXtripleJump()
-    {
-        Debug.Log(remainingJumps);
-    }
+   
 }
