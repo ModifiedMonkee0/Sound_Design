@@ -16,27 +16,44 @@ public class AudioManager : MonoBehaviour
     private FMOD.Studio.EventInstance TripleJumpInstance; //burda instanceledik
     [SerializeField] FMODUnity.EventReference tripleJumpEvent;
 
+    private FMOD.Studio.EventInstance DeadSoundInstance; //burda instanceledik
+    [SerializeField] FMODUnity.EventReference deadEvent;
+
+    private FMOD.Studio.EventInstance GrowSoundInstance; //burda instanceledik
+    [SerializeField] FMODUnity.EventReference GrowEvent;
 
     //Eðer bir sliderla deðiþtirmek istersek
-       //[SerializeField] [Range(0f,2f)]
-       //private float pitch;
+    //[SerializeField] [Range(0f,2f)]
+    //private float pitch;
 
 
 
     private void Start()
     {
-        //Yukarýda bir instance oluþturduk. Ve bir event referansý oluþturduk.Bunlarý aþaðýdaki kodla birleþtiriyoruz
-        //aslýnda hangi eventin bir instancesini(örneðini) oluþturacaðýmýzý seçiyoruz.
-        //Ýnstance oluþturmamýzýn sebebi ses parçasýný tüm projede etkilememek.
+      
         TripleJumpInstance = RuntimeManager.CreateInstance(tripleJumpEvent);
-        
-        
+
+        DeadSoundInstance = RuntimeManager.CreateInstance(deadEvent);
+
+        GrowSoundInstance = RuntimeManager.CreateInstance(GrowEvent);
+
+       
     }
     public void PlayTripleJump()
     {
         //RuntimeManager.PlayOneShotAttached(tripleJumpEvent, player);
         TripleJumpInstance.start();
     }
+    public void PlayDeadSound()
+    {
+        DeadSoundInstance.start();
+    }
+
+    public void PlayGrowSound()
+    {
+        GrowSoundInstance.start();
+    }
+
     void Update()
     {
         //yeni bir float oluþturduk ve parametre deðerini kalan zýplama hakkýmýza eþitledik.
@@ -54,8 +71,22 @@ public class AudioManager : MonoBehaviour
             PlayTripleJump();  //burda çalýþtýrmam gerekiyor, çünkü her zýplamada bir kere oynamalý.
             
         }
-        
-        
-        
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+
+            PlayDeadSound();
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+
+            PlayGrowSound();
+        }
+
+
+
+
     }
 }

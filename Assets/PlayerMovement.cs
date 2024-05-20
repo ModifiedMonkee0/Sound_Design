@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     [SerializeField] private float speed = 8f;
     [SerializeField] private float jumpingPower = 7f;
-    private bool isFacingRight = true;
+    private bool isFacingRight = false;
 
     private bool isWallSliding;
     private float wallSlidingSpeed = 2f;

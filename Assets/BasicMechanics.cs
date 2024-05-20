@@ -13,48 +13,54 @@ public class BasicMechanics : MonoBehaviour
 
     public Rigidbody2D rb2d;
 
-
     public Vector3 newScale = new Vector3(2f, 2f, 2f); // Yeni scale deðeri
+    public float scaleDuration = 3f; // Scale deðiþim süresi
     public GameObject body;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) // Space tuþuna basýldýðýnda instantiate iþlemi yapýlacak
+        if (Input.GetKeyDown(KeyCode.Mouse0)) // Sol týklama ile animasyon ve spawn iþlemi
         {
             bodyAnimator.SetBool("Dead", true);
             StopPlayerMovement();
-            
-            WaitBeforeDead();
+
             StartCoroutine(WaitBeforeDead());
-
-
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse1)) // S tuþuna basýldýðýnda scale deðiþecek
+        if (Input.GetKeyDown(KeyCode.Mouse1)) // Sað týklama ile boyut deðiþimi
         {
-            ChangeScale();
+            StartCoroutine(ChangeScaleOverTime(newScale, scaleDuration));
+            objectToInstantiate.transform.localScale = newScale;
         }
     }
 
     IEnumerator WaitBeforeDead()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3.5f);
         InstantiateAtPlayerPosition();
         SpawnPlayer();
         bodyAnimator.SetBool("Dead", false);
         StartPlayerMovement();
     }
+
     void InstantiateAtPlayerPosition()
     {
-        
         Instantiate(objectToInstantiate, playerTransform.position, playerTransform.rotation);
     }
-    void ChangeScale()
+
+    IEnumerator ChangeScaleOverTime(Vector3 targetScale, float duration)
     {
-        
-        body.transform.localScale = newScale;
-        objectToInstantiate.transform.localScale = newScale;
-        
+        Vector3 initialScale = body.transform.localScale;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            body.transform.localScale = Vector3.Lerp(initialScale, targetScale, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        body.transform.localScale = targetScale;
     }
 
     void SpawnPlayer()
@@ -62,7 +68,7 @@ public class BasicMechanics : MonoBehaviour
         playerPrefab.transform.position = respawnPoint.position;
     }
 
-   void StopPlayerMovement()
+    void StopPlayerMovement()
     {
         rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
     }
@@ -71,5 +77,4 @@ public class BasicMechanics : MonoBehaviour
     {
         rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
-
 }

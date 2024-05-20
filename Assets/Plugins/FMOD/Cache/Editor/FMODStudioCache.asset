@@ -143,6 +143,34 @@ MonoBehaviour:
   - Name: Desktop
     Value: 52416
   Exists: 1
+--- !u!114 &-7973762384182398284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/B\xFCy\xFCme"
+  m_EditorClassIdentifier: 
+  Path: "event:/B\xFCy\xFCme"
+  Guid:
+    Data1: -198347526
+    Data2: 1232566517
+    Data3: 642920330
+    Data4: 204597694
+  Banks:
+  - {fileID: -7595559807807062399}
+  - {fileID: 6068478942294242370}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3100
 --- !u!114 &-7824734019420939315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,10 +239,10 @@ MonoBehaviour:
   Path: "../../../Desktop/\xF6dev/Year lll- G\xFCz/Bayakar- Sound/Baykar_sound_design_deneme/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638513668421335422
+  lastModified: 638518255576813915
   FileSizes:
   - Name: Desktop
-    Value: 35296
+    Value: 289216
   Exists: 1
 --- !u!114 &-7542855942817320493
 MonoBehaviour:
@@ -592,10 +620,10 @@ MonoBehaviour:
   Path: "../../../Desktop/\xF6dev/Year lll- G\xFCz/Bayakar- Sound/Baykar_sound_design_deneme/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638513668421355461
+  lastModified: 638518255576833988
   FileSizes:
   - Name: Desktop
-    Value: 4178
+    Value: 4306
   Exists: 1
 --- !u!114 &-3232653914606380679
 MonoBehaviour:
@@ -844,6 +872,7 @@ MonoBehaviour:
   - {fileID: 5910340512639154397}
   - {fileID: -3232653914606380679}
   - {fileID: -3949650709810104959}
+  - {fileID: 6068478942294242370}
   EditorEvents:
   - {fileID: 2097854809459638828}
   - {fileID: 8940647792693910650}
@@ -876,13 +905,15 @@ MonoBehaviour:
   - {fileID: 4657041506264319538}
   - {fileID: -3205738639921494125}
   - {fileID: -3687899455607109458}
-  - {fileID: 7644728247923780706}
+  - {fileID: 1949507704970499007}
+  - {fileID: 8234334491793951819}
+  - {fileID: -7973762384182398284}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7595559807807062399}
   StringsBanks:
   - {fileID: -3400270536218852652}
-  cacheTime: 638513668421355461
+  cacheTime: 638518255577141438
   cacheVersion: 131617
 --- !u!114 &287874821484499758
 MonoBehaviour:
@@ -1024,6 +1055,34 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1949507704970499007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dead
+  m_EditorClassIdentifier: 
+  Path: event:/Dead
+  Guid:
+    Data1: 1608339118
+    Data2: 1198319508
+    Data3: 940821123
+    Data4: -88709665
+  Banks:
+  - {fileID: -7595559807807062399}
+  - {fileID: 6068478942294242370}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3180
 --- !u!114 &2097854809459638828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,6 +1401,27 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6068478942294242370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Not Alive Master.bank
+  m_EditorClassIdentifier: 
+  Path: "../../../Desktop/\xF6dev/Year lll- G\xFCz/Bayakar- Sound/Baykar_sound_design_deneme/Build/Desktop/Not
+    Alive Master.bank"
+  Name: Not Alive Master
+  StudioPath: bank:/Not Alive Master
+  lastModified: 638518255577141438
+  FileSizes:
+  - Name: Desktop
+    Value: 265920
+  Exists: 1
 --- !u!114 &6140603027058569611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,7 +1633,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &7644728247923780706
+--- !u!114 &8234334491793951819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1563,23 +1643,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Power_Up
+  m_Name: event:/Walk
   m_EditorClassIdentifier: 
-  Path: event:/Power_Up
+  Path: event:/Walk
   Guid:
-    Data1: 928993219
-    Data2: 1284240990
-    Data3: 971391638
-    Data4: 1113388669
+    Data1: -215234631
+    Data2: 1123082418
+    Data3: -486020972
+    Data4: 1363532385
   Banks:
   - {fileID: -7595559807807062399}
-  IsStream: 0
+  - {fileID: 6068478942294242370}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1002
+  Length: 16300
 --- !u!114 &8286007710737919431
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d9ead33f75242542b6c7054b90f7697
+guid: 80e88ebc20cccd747b3743bc289a54e0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,148 +141,316 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dead_0
+      name: ROBOT_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 25
+        x: 8
+        y: 3
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfe616ffb862d614d8f8b8ec971e02f0
-      internalID: 201616103
+      spriteID: e536e000ebbd37745ace6d718409f2ec
+      internalID: -1368351151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_1
+      name: ROBOT_1
       rect:
         serializedVersion: 2
-        x: 88
-        y: 25
+        x: 40
+        y: 3
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.47619048}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5340d34affbe6042b29e20c492b8ef0
-      internalID: -761788122
+      spriteID: 0e1b5eb9b0a84924e88fafac3d959c57
+      internalID: -364922690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_2
+      name: ROBOT_2
       rect:
         serializedVersion: 2
-        x: 152
-        y: 25
+        x: 72
+        y: 3
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10907874a2f77b943a5fc3e9e9f43576
-      internalID: -1608684058
+      spriteID: f3ff84637fc3d7c4287bb8365b5e83d9
+      internalID: -669339957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_3
+      name: ROBOT_3
       rect:
         serializedVersion: 2
-        x: 216
-        y: 25
+        x: 104
+        y: 3
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.47619048}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9e02560c9b51e7478a4cd9eb4663266
-      internalID: 171182592
+      spriteID: 827eb110fe0de464caac602d45e75c71
+      internalID: 740694399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_4
+      name: ROBOT_4
       rect:
         serializedVersion: 2
-        x: 280
-        y: 25
+        x: 136
+        y: 3
         width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.45454547}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68699b80085a30a44b3c892e7e363367
-      internalID: 1707577021
+      spriteID: 6a916365c8b455e4dbd52553a228da5d
+      internalID: -1489025871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_5
+      name: ROBOT_5
       rect:
         serializedVersion: 2
-        x: 344
-        y: 25
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 166
+        y: 3
+        width: 20
+        height: 19
+      alignment: 9
+      pivot: {x: 0.55, y: 0.47368422}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6de9d3d94ca80a04f994aa71ac65dd5d
-      internalID: 1444160803
+      spriteID: 4ab86cc0f7f6107408c4a7e6521affb9
+      internalID: 361028038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dead_6
+      name: ROBOT_6
       rect:
         serializedVersion: 2
-        x: 408
-        y: 25
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 197
+        y: 3
+        width: 21
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7a4f5e302b225b4087b74b31242f3dc
-      internalID: -1775979798
+      spriteID: d41f5d80b72c64a4e91f06cd27eb970b
+      internalID: 1174029718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.55, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7024a559cce6fe643bac8e50fe4c15bd
+      internalID: 881298647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 3
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.55, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dbe713da51f1d42be948306d09b0b7
+      internalID: -240945097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_9
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 4
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ad84c9d3ff1744097987e8a0726fcd
+      internalID: 177052415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f382327ab4de0c443a88e197f5b5dc71
+      internalID: 831372320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff4f33a8f861cb4a91032a9d3409665
+      internalID: -863332688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 3
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.40000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a1c6df3405d7d4b9e246dfa643cd93
+      internalID: -1487430875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_13
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 3
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.40000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8028d360adff94a46b5a467377165d12
+      internalID: -432025861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ROBOT_14
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 3
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.40000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa3fdd2fcd08c348891850a1f3ec89f
+      internalID: -982543036
       vertices: []
       indices: 
       edges: []
@@ -298,13 +466,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dead_0: 201616103
-      Dead_1: -761788122
-      Dead_2: -1608684058
-      Dead_3: 171182592
-      Dead_4: 1707577021
-      Dead_5: 1444160803
-      Dead_6: -1775979798
+      ROBOT_0: -1368351151
+      ROBOT_1: -364922690
+      ROBOT_10: 831372320
+      ROBOT_11: -863332688
+      ROBOT_12: -1487430875
+      ROBOT_13: -432025861
+      ROBOT_14: -982543036
+      ROBOT_2: -669339957
+      ROBOT_3: 740694399
+      ROBOT_4: -1489025871
+      ROBOT_5: 361028038
+      ROBOT_6: 1174029718
+      ROBOT_7: 881298647
+      ROBOT_8: -240945097
+      ROBOT_9: 177052415
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
