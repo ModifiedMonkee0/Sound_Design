@@ -22,6 +22,15 @@ public class AudioManager : MonoBehaviour
     private FMOD.Studio.EventInstance GrowSoundInstance; //burda instanceledik
     [SerializeField] FMODUnity.EventReference GrowEvent;
 
+    private FMOD.Studio.EventInstance IdleSoundInstance; //burda instanceledik
+    [SerializeField] FMODUnity.EventReference IdleEvent;
+
+    private FMOD.Studio.EventInstance TireRollingSoundInstance; //burda instanceledik
+    [SerializeField] FMODUnity.EventReference TireRollingEvent;
+
+    private FMOD.Studio.EventInstance BackgroundSoundInstance; //burda instanceledik
+    [SerializeField] FMODUnity.EventReference BackgroundSoundEvent;
+
     //Eðer bir sliderla deðiþtirmek istersek
     //[SerializeField] [Range(0f,2f)]
     //private float pitch;
@@ -37,7 +46,14 @@ public class AudioManager : MonoBehaviour
 
         GrowSoundInstance = RuntimeManager.CreateInstance(GrowEvent);
 
-       
+        IdleSoundInstance = RuntimeManager.CreateInstance(IdleEvent);
+
+        TireRollingSoundInstance = RuntimeManager.CreateInstance(TireRollingEvent);
+
+        BackgroundSoundInstance = RuntimeManager.CreateInstance(BackgroundSoundEvent);
+
+        BackgroundSoundInstance.start();
+
     }
     public void PlayTripleJump()
     {
@@ -54,14 +70,19 @@ public class AudioManager : MonoBehaviour
         GrowSoundInstance.start();
     }
 
+    public void PlayIdleSound()
+    {
+        IdleSoundInstance.start();
+    }
+
+    public void PlayTireSound()
+    {
+        TireRollingSoundInstance.start();
+    }
+
     void Update()
     {
-        //yeni bir float oluþturduk ve parametre deðerini kalan zýplama hakkýmýza eþitledik.
-       int pitchValue = playerMovement.remainingJumps;
-        
-
-        //þimdi parametre ismini referans alarak o parametrenin deðerini az once olusturdugumuz floata dönüþtürdük
-        TripleJumpInstance.setParameterByName("PitchChanger", pitchValue);
+       
 
 
      
@@ -78,14 +99,25 @@ public class AudioManager : MonoBehaviour
             PlayDeadSound();
         }
 
-
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        
+        if (Input.GetKeyDown(KeyCode.Alpha1)|| Input.GetKeyDown(KeyCode.Alpha2))
         {
 
             PlayGrowSound();
         }
 
+        if (Mathf.Abs(playerMovement.horizontal) > 0.1f)
+        {
+            PlayIdleSound();
+           
+        }
 
+        if (Mathf.Abs(playerMovement.horizontal) < 0.1f)
+        {
+            PlayTireSound();
+           
+            
+        }
 
 
     }

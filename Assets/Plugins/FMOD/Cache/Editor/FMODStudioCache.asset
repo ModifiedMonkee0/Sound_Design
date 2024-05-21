@@ -162,8 +162,8 @@ MonoBehaviour:
     Data3: 642920330
     Data4: 204597694
   Banks:
-  - {fileID: -7595559807807062399}
   - {fileID: 6068478942294242370}
+  - {fileID: -7595559807807062399}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -239,10 +239,10 @@ MonoBehaviour:
   Path: "../../../Desktop/\xF6dev/Year lll- G\xFCz/Bayakar- Sound/Baykar_sound_design_deneme/Build/Desktop/Master.bank"
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638518255576813915
+  lastModified: 638519370159861535
   FileSizes:
   - Name: Desktop
-    Value: 289216
+    Value: 1279904
   Exists: 1
 --- !u!114 &-7542855942817320493
 MonoBehaviour:
@@ -620,11 +620,38 @@ MonoBehaviour:
   Path: "../../../Desktop/\xF6dev/Year lll- G\xFCz/Bayakar- Sound/Baykar_sound_design_deneme/Build/Desktop/Master.strings.bank"
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638518255576833988
+  lastModified: 638519370159881859
   FileSizes:
   - Name: Desktop
-    Value: 4306
+    Value: 4412
   Exists: 1
+--- !u!114 &-3318157948843671251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Background
+  m_EditorClassIdentifier: 
+  Path: event:/Background
+  Guid:
+    Data1: 82409041
+    Data2: 1162052876
+    Data3: -207073919
+    Data4: 1529795971
+  Banks:
+  - {fileID: -7595559807807062399}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 75572
 --- !u!114 &-3232653914606380679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,14 +933,16 @@ MonoBehaviour:
   - {fileID: -3205738639921494125}
   - {fileID: -3687899455607109458}
   - {fileID: 1949507704970499007}
-  - {fileID: 8234334491793951819}
   - {fileID: -7973762384182398284}
+  - {fileID: 7272429841143421491}
+  - {fileID: 7557492107579778714}
+  - {fileID: -3318157948843671251}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7595559807807062399}
   StringsBanks:
   - {fileID: -3400270536218852652}
-  cacheTime: 638518255577141438
+  cacheTime: 638519370159881859
   cacheVersion: 131617
 --- !u!114 &287874821484499758
 MonoBehaviour:
@@ -1074,15 +1103,15 @@ MonoBehaviour:
     Data3: 940821123
     Data4: -88709665
   Banks:
-  - {fileID: -7595559807807062399}
   - {fileID: 6068478942294242370}
+  - {fileID: -7595559807807062399}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3180
+  Length: 3950
 --- !u!114 &2097854809459638828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,10 +1446,10 @@ MonoBehaviour:
     Alive Master.bank"
   Name: Not Alive Master
   StudioPath: bank:/Not Alive Master
-  lastModified: 638518255577141438
+  lastModified: 638519318705449093
   FileSizes:
   - Name: Desktop
-    Value: 265920
+    Value: 333696
   Exists: 1
 --- !u!114 &6140603027058569611
 MonoBehaviour:
@@ -1532,7 +1561,7 @@ MonoBehaviour:
   - {fileID: -4526132020680096661}
   MinDistance: 1
   MaxDistance: 20
-  Length: 340
+  Length: 1070
 --- !u!114 &7227395658919962829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1557,6 +1586,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &7272429841143421491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TireRolling
+  m_EditorClassIdentifier: 
+  Path: event:/TireRolling
+  Guid:
+    Data1: -1340615409
+    Data2: 1324455714
+    Data3: 868349873
+    Data4: -109385358
+  Banks:
+  - {fileID: -7595559807807062399}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3200
 --- !u!114 &7388010510836357215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,7 +1689,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &8234334491793951819
+--- !u!114 &7557492107579778714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1643,24 +1699,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Walk
+  m_Name: event:/IDle
   m_EditorClassIdentifier: 
-  Path: event:/Walk
+  Path: event:/IDle
   Guid:
     Data1: -215234631
     Data2: 1123082418
     Data3: -486020972
     Data4: 1363532385
   Banks:
-  - {fileID: -7595559807807062399}
   - {fileID: 6068478942294242370}
+  - {fileID: -7595559807807062399}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 16300
+  Length: 3200
 --- !u!114 &8286007710737919431
 MonoBehaviour:
   m_ObjectHideFlags: 0

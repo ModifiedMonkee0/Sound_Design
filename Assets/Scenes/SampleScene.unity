@@ -383,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f1750bd3f4ca649a476777e4f2f937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontal: 0
   speed: 5
   jumpingPower: 11
   wallJumpingPower: {x: 3, y: 15}
@@ -2355,6 +2356,27 @@ MonoBehaviour:
       Data3: 642920330
       Data4: 204597694
     Path: "event:/B\xFCy\xFCme"
+  IdleEvent:
+    Guid:
+      Data1: -215234631
+      Data2: 1123082418
+      Data3: -486020972
+      Data4: 1363532385
+    Path: event:/IDle
+  TireRollingEvent:
+    Guid:
+      Data1: -1340615409
+      Data2: 1324455714
+      Data3: 868349873
+      Data4: -109385358
+    Path: event:/TireRolling
+  BackgroundSoundEvent:
+    Guid:
+      Data1: 82409041
+      Data2: 1162052876
+      Data3: -207073919
+      Data4: 1529795971
+    Path: event:/Background
 --- !u!4 &1395273947
 Transform:
   m_ObjectHideFlags: 0

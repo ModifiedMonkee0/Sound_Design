@@ -29,11 +29,18 @@ public class BasicMechanics : MonoBehaviour
             StartCoroutine(WaitBeforeDead());
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse1)) // Sað týklama ile boyut deðiþimi
+        if (Input.GetKeyDown(KeyCode.Alpha2)) // Sað týklama ile boyut deðiþimi
         {
             StartCoroutine(ChangeScaleOverTime(newScale, scaleDuration));
             objectToInstantiate.transform.localScale = newScale;
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1)) // Sað týklama ile boyut deðiþimi
+        {
+            StartCoroutine(ChangeScaleOverTime(normalScale, scaleDuration));
+            objectToInstantiate.transform.localScale = normalScale;
+        }
+
     }
 
     IEnumerator WaitBeforeDead()
@@ -64,6 +71,8 @@ public class BasicMechanics : MonoBehaviour
 
         body.transform.localScale = targetScale;
     }
+
+    
 
     void SpawnPlayer()
     {
