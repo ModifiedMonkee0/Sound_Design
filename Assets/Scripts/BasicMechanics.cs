@@ -74,7 +74,7 @@ public class BasicMechanics : MonoBehaviour
 
     
 
-    void SpawnPlayer()
+    public void SpawnPlayer()
     {
         playerPrefab.transform.position = respawnPoint.position;
 

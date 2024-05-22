@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7997157259357115352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7997157259357115354}
+  - component: {fileID: 7997157259357115355}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7997157259357115354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7997157259357115352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0577022, y: 5.5051694, z: 0.58000976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7997157259357115355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7997157259357115352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05cbce4ebae17f40a1ace873adb76fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  playerMovement: {fileID: 0}
+  tripleJumpEvent:
+    Guid:
+      Data1: 1388864096
+      Data2: 1189726902
+      Data3: -1658555467
+      Data4: 1252333161
+    Path: event:/Triple_Jump
+  deadEvent:
+    Guid:
+      Data1: 1608339118
+      Data2: 1198319508
+      Data3: 940821123
+      Data4: -88709665
+    Path: event:/Dead
+  GrowEvent:
+    Guid:
+      Data1: -198347526
+      Data2: 1232566517
+      Data3: 642920330
+      Data4: 204597694
+    Path: "event:/B\xFCy\xFCme"
+  IdleEvent:
+    Guid:
+      Data1: -215234631
+      Data2: 1123082418
+      Data3: -486020972
+      Data4: 1363532385
+    Path: event:/IDle
+  TireRollingEvent:
+    Guid:
+      Data1: -1340615409
+      Data2: 1324455714
+      Data3: 868349873
+      Data4: -109385358
+    Path: event:/TireRolling
+  BackgroundSoundEvent:
+    Guid:
+      Data1: 82409041
+      Data2: 1162052876
+      Data3: -207073919
+      Data4: 1529795971
+    Path: event:/Background

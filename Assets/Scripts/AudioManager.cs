@@ -80,6 +80,16 @@ public class AudioManager : MonoBehaviour
         TireRollingSoundInstance.start();
     }
 
+    public void StopFmod()
+    {
+        TripleJumpInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        DeadSoundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        GrowSoundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        IdleSoundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        TireRollingSoundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        BackgroundSoundInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
+
     void Update()
     {
        
